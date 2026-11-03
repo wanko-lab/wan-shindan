@@ -7,40 +7,32 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="わんこ相性診断｜あなたにぴったりのパートナー犬は？">
 <meta property="og:description" content="60問の質問から、あなたの飼い主タイプと相性のいい犬種を30犬種から診断します。">
-<meta property="og:image" content="https://kkkishigami.github.io/wan-shindan/ogp.png">
-<meta property="og:url" content="https://kkkishigami.github.io/wan-shindan/">
+<meta property="og:image" content="https://wanko-lab.github.io/wan-shindan/ogp.png">
+<meta property="og:url" content="https://wanko-lab.github.io/wan-shindan/">
 <meta property="og:site_name" content="わんこ相性診断">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="わんこ相性診断｜あなたにぴったりのパートナー犬は？">
-<meta name="twitter:image" content="https://kkkishigami.github.io/wan-shindan/ogp.png">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg fill='%2316856F'%3E%3Cellipse cx='16' cy='21' rx='7.5' ry='6.5'/%3E%3Cellipse cx='7' cy='13' rx='3.2' ry='4'/%3E%3Cellipse cx='25' cy='13' rx='3.2' ry='4'/%3E%3Cellipse cx='12' cy='7' rx='3' ry='3.8'/%3E%3Cellipse cx='20' cy='7' rx='3' ry='3.8'/%3E%3C/g%3E%3C/svg%3E">
-<style>html{color-scheme:light}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<meta name="twitter:image" content="https://wanko-lab.github.io/wan-shindan/ogp.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg fill='%231E8A71'%3E%3Cellipse cx='16' cy='21' rx='7.5' ry='6.5'/%3E%3Cellipse cx='7' cy='13' rx='3.2' ry='4'/%3E%3Cellipse cx='25' cy='13' rx='3.2' ry='4'/%3E%3Cellipse cx='12' cy='7' rx='3' ry='3.8'/%3E%3Cellipse cx='20' cy='7' rx='3' ry='3.8'/%3E%3C/g%3E%3C/svg%3E">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>わんこ相性診断</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&family=Zen+Maru+Gothic:wght@500;700&display=swap">
 <style>
 /* Layout: 1カラムのペットショップ風。ミントの店内に、白い商品カードと黄色の値札・コーラルの肉球が並ぶ */
 :root{
-  --bg:#F1F7F4; --surface:#FFFFFF; --soft:#E2F1EA; --line:#D5E6DF;
-  --ink:#1F3445; --muted:#5A6F7C;
-  --brand:#16856F; --brand-ink:#FFFFFF; --sun:#FFC63F; --sun-ink:#4A3300; --coral:#FF7867;
-  --dis:#F08A7C; --agr:#16856F;
+  /* 淡いミントの店内に、白い棚と黄色の値札。犬の足あとが床に散らばる */
+  --bg:#F6FBF8; --hero:#DDF2E9; --surface:#FFFFFF; --soft:#EAF6F0; --line:#DAEBE3;
+  --ink:#2B3D48; --muted:#6A7E87;
+  --brand:#1E8A71; --brand-ink:#FFFFFF; --sun:#FFD466; --sun-ink:#4A3300; --coral:#FF8A7A;
+  --paw:#F7C9C0; --dis:#F29486; --agr:#2AA083;
   --display:"M PLUS Rounded 1c","Hiragino Maru Gothic ProN","Hiragino Sans",sans-serif;
   --body:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic",sans-serif;
-  --r:22px;
+  --r:22px; color-scheme:light;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#12201D; --surface:#1A2C28; --soft:#1F3631; --line:#2A423C;
-  --ink:#E8F2EE; --muted:#9EB5AE;
-  --brand:#45C2A8; --brand-ink:#0D1F1B; --sun:#FFD066; --sun-ink:#3A2900; --coral:#FF8C7D;
-  --dis:#F29A8E; --agr:#45C2A8; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#12201D; --surface:#1A2C28; --soft:#1F3631; --line:#2A423C;
-  --ink:#E8F2EE; --muted:#9EB5AE;
-  --brand:#45C2A8; --brand-ink:#0D1F1B; --sun:#FFD066; --sun-ink:#3A2900; --coral:#FF8C7D;
-  --dis:#F29A8E; --agr:#45C2A8; color-scheme:dark}
 
 *{box-sizing:border-box}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22260%22%20height%3D%22260%22%20viewBox%3D%220%200%20260%20260%22%3E%3Cg%20transform%3D%22translate%2818%2024%29%20rotate%28-18%2016%2016%29%22%20fill%3D%22%23F4A99C%22%20opacity%3D%220.35%22%3E%3Cg%3E%3Cellipse%20cx%3D%2216%22%20cy%3D%2221%22%20rx%3D%227.5%22%20ry%3D%226.5%22/%3E%3Cellipse%20cx%3D%227%22%20cy%3D%2213%22%20rx%3D%223.2%22%20ry%3D%224%22/%3E%3Cellipse%20cx%3D%2225%22%20cy%3D%2213%22%20rx%3D%223.2%22%20ry%3D%224%22/%3E%3Cellipse%20cx%3D%2212%22%20cy%3D%227%22%20rx%3D%223%22%20ry%3D%223.8%22/%3E%3Cellipse%20cx%3D%2220%22%20cy%3D%227%22%20rx%3D%223%22%20ry%3D%223.8%22/%3E%3C/g%3E%3C/g%3E%3Cg%20transform%3D%22translate%28150%208%29%20rotate%2822%2016%2016%29%22%20fill%3D%22%239FD9C7%22%20opacity%3D%220.45%22%3E%3Cg%3E%3Cellipse%20cx%3D%2216%22%20cy%3D%2221%22%20rx%3D%227.5%22%20ry%3D%226.5%22/%3E%3Cellipse%20cx%3D%227%22%20cy%3D%2213%22%20rx%3D%223.2%22%20ry%3D%224%22/%3E%3Cellipse%20cx%3D%2225%22%20cy%3D%2213%22%20rx%3D%223.2%22%20ry%3D%224%22/%3E%3Cellipse%20cx%3D%2212%22%20cy%3D%227%22%20rx%3D%223%22%20ry%3D%223.8%22/%3E%3Cellipse%20cx%3D%2220%22%20cy%3D%227%22%20rx%3D%223%22%20ry%3D%223.8%22/%3E%3C/g%3E%3C/g%3E%3Cg%20transform%3D%22translate%2896%2092%29%20rotate%28-6%2016%2016%29%22%20fill%3D%22%23FFD466%22%20opacity%3D%220.45%22%3E%3Cg%3E%3Cellipse%20cx%3D%2216%22%20cy%3D%2221%22%20rx%3D%227.5%22%20ry%3D%226.5%22/%3E%3Cellipse%20cx%3D%227%22%20cy%3D%2213%22%20rx%3D%223.2%22%20ry%3D%224%22/%3E%3Cellipse%20cx%3D%2225%22%20cy%3D%2213%22%20rx%3D%223.2%22%20ry%3D%224%22/%3E%3Cellipse%20cx%3D%2212%22%20cy%3D%227%22%20rx%3D%223%22%20ry%3D%223.8%22/%3E%3Cellipse%20cx%3D%2220%22%20cy%3D%227%22%20rx%3D%223%22%20ry%3D%223.8%22/%3E%3C/g%3E%3C/g%3E%3Cg%20transform%3D%22translate%28200%20120%29%20rotate%2830%2016%2016%29%22%20fill%3D%22%23F4A99C%22%20opacity%3D%220.3%22%3E%3Cg%3E%3Cellipse%20cx%3D%2216%22%20cy%3D%2221%22%20rx%3D%227.5%22%20ry%3D%226.5%22/%3E%3Cellipse%20cx%3D%227%22%20cy%3D%2213%22%20rx%3D%223.2%22%20ry%3D%224%22/%3E%3Cellipse%20cx%3D%2225%22%20cy%3D%2213%22%20rx%3D%223.2%22%20ry%3D%224%22/%3E%3Cellipse%20cx%3D%2212%22%20cy%3D%227%22%20rx%3D%223%22%20ry%3D%223.8%22/%3E%3Cellipse%20cx%3D%2220%22%20cy%3D%227%22%20rx%3D%223%22%20ry%3D%223.8%22/%3E%3C/g%3E%3C/g%3E%3Cg%20transform%3D%22translate%2830%20160%29%20rotate%2812%2016%2016%29%22%20fill%3D%22%239FD9C7%22%20opacity%3D%220.4%22%3E%3Cg%3E%3Cellipse%20cx%3D%2216%22%20cy%3D%2221%22%20rx%3D%227.5%22%20ry%3D%226.5%22/%3E%3Cellipse%20cx%3D%227%22%20cy%3D%2213%22%20rx%3D%223.2%22%20ry%3D%224%22/%3E%3Cellipse%20cx%3D%2225%22%20cy%3D%2213%22%20rx%3D%223.2%22%20ry%3D%224%22/%3E%3Cellipse%20cx%3D%2212%22%20cy%3D%227%22%20rx%3D%223%22%20ry%3D%223.8%22/%3E%3Cellipse%20cx%3D%2220%22%20cy%3D%227%22%20rx%3D%223%22%20ry%3D%223.8%22/%3E%3C/g%3E%3C/g%3E%3Cg%20transform%3D%22translate%28130%20190%29%20rotate%28-25%2016%2016%29%22%20fill%3D%22%23F4A99C%22%20opacity%3D%220.3%22%3E%3Cg%3E%3Cellipse%20cx%3D%2216%22%20cy%3D%2221%22%20rx%3D%227.5%22%20ry%3D%226.5%22/%3E%3Cellipse%20cx%3D%227%22%20cy%3D%2213%22%20rx%3D%223.2%22%20ry%3D%224%22/%3E%3Cellipse%20cx%3D%2225%22%20cy%3D%2213%22%20rx%3D%223.2%22%20ry%3D%224%22/%3E%3Cellipse%20cx%3D%2212%22%20cy%3D%227%22%20rx%3D%223%22%20ry%3D%223.8%22/%3E%3Cellipse%20cx%3D%2220%22%20cy%3D%227%22%20rx%3D%223%22%20ry%3D%223.8%22/%3E%3C/g%3E%3C/g%3E%3Cg%20transform%3D%22translate%28220%20220%29%20rotate%288%2016%2016%29%22%20fill%3D%22%23FFD466%22%20opacity%3D%220.4%22%3E%3Cg%3E%3Cellipse%20cx%3D%2216%22%20cy%3D%2221%22%20rx%3D%227.5%22%20ry%3D%226.5%22/%3E%3Cellipse%20cx%3D%227%22%20cy%3D%2213%22%20rx%3D%223.2%22%20ry%3D%224%22/%3E%3Cellipse%20cx%3D%2225%22%20cy%3D%2213%22%20rx%3D%223.2%22%20ry%3D%224%22/%3E%3Cellipse%20cx%3D%2212%22%20cy%3D%227%22%20rx%3D%223%22%20ry%3D%223.8%22/%3E%3Cellipse%20cx%3D%2220%22%20cy%3D%227%22%20rx%3D%223%22%20ry%3D%223.8%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");background-size:260px 260px}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.75;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
 .wrap{max-width:680px;margin:0 auto}
@@ -55,15 +47,15 @@ button:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
 .tagpill{font-size:12px;background:var(--sun);color:var(--sun-ink);padding:3px 10px;border-radius:999px;font-family:var(--display);font-weight:800}
 
 /* hero */
-.hero{background:var(--brand);color:var(--brand-ink);border-radius:28px;padding:28px 22px 0;margin-top:8px;overflow:hidden;position:relative}
+.hero{background:var(--hero);color:var(--ink);border-radius:28px;padding:28px 22px 0;margin-top:8px;overflow:hidden;position:relative}
 .hero h1{font-size:clamp(26px,6.4vw,38px);letter-spacing:.01em}
 .hero h1 em{font-style:normal;background:var(--sun);color:var(--sun-ink);padding:0 .25em;border-radius:10px}
-.hero p{margin:12px 0 18px;max-width:30em;opacity:.95}
+.hero p{margin:12px 0 18px;max-width:30em;color:var(--ink)}
 .specs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
-.specs span{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:4px 12px;font-size:13px;font-family:var(--display);font-weight:500}
-.cta{display:inline-flex;align-items:center;gap:8px;background:var(--sun);color:var(--sun-ink);border:0;border-radius:999px;padding:14px 28px;font-size:17px;font-weight:800;box-shadow:0 5px 0 rgba(0,0,0,.18);transition:transform .15s}
+.specs span{background:rgba(255,255,255,.75);border:1px solid var(--line);color:var(--brand);border-radius:999px;padding:4px 12px;font-size:13px;font-family:var(--display);font-weight:500}
+.cta{display:inline-flex;align-items:center;gap:8px;background:var(--sun);color:var(--sun-ink);border:0;border-radius:999px;padding:14px 28px;font-size:17px;font-weight:800;box-shadow:0 5px 0 #E3B23F;transition:transform .15s}
 .cta:hover{transform:translateY(-2px)}
-.cta:active{transform:translateY(2px);box-shadow:0 2px 0 rgba(0,0,0,.18)}
+.cta:active{transform:translateY(2px);box-shadow:0 2px 0 #E3B23F}
 .resume{margin-left:10px;background:none;border:0;color:inherit;text-decoration:underline;font-size:14px}
 .parade{display:flex;justify-content:space-between;gap:4px;margin-top:22px}
 .parade svg{width:20%;max-width:110px;height:auto;animation:bob 2.6s ease-in-out infinite;transform-origin:bottom}
@@ -89,6 +81,21 @@ button:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
 .prog-row{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--display);font-size:13px;color:var(--muted)}
 .prog-row b{color:var(--ink);font-size:16px;font-variant-numeric:tabular-nums}
+.trail{position:relative;height:58px;margin-top:4px}
+.track{position:absolute;left:0;right:30px;bottom:6px;height:14px;background:var(--soft);border:1.5px dashed var(--line);border-radius:999px;overflow:hidden}
+.track i{display:block;height:100%;background:#FFE9E4 url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2222%22%20height%3D%2212%22%20viewBox%3D%220%200%2022%2012%22%3E%3Cg%20fill%3D%22%23FF8A7A%22%3E%3Cellipse%20cx%3D%226%22%20cy%3D%228%22%20rx%3D%222.6%22%20ry%3D%222.2%22/%3E%3Ccircle%20cx%3D%223%22%20cy%3D%224.6%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%225%22%20cy%3D%223.4%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%227.2%22%20cy%3D%223.4%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%229.1%22%20cy%3D%224.6%22%20r%3D%221.1%22/%3E%3C/g%3E%3C/svg%3E") repeat-x 4px center/22px 12px;border-radius:999px;transition:width .5s ease}
+.goal{position:absolute;right:0;bottom:0;width:34px;height:22px}
+.walker{position:absolute;bottom:12px;left:0;width:52px;transition:left .5s ease}
+.walker svg{display:block;width:100%;height:auto;overflow:visible}
+.walker .leg{transform-box:fill-box;transform-origin:50% 0}
+.walker .tail{transform-box:fill-box;transform-origin:100% 100%;animation:wag 1.4s ease-in-out infinite}
+.walking svg{animation:hop .25s ease-in-out infinite alternate}
+.walking .l1,.walking .l4{animation:step .25s ease-in-out infinite alternate}
+.walking .l2,.walking .l3{animation:step .25s ease-in-out infinite alternate-reverse}
+.walking .tail{animation-duration:.3s}
+@keyframes step{from{transform:rotate(-24deg)}to{transform:rotate(24deg)}}
+@keyframes hop{from{transform:translateY(0)}to{transform:translateY(-2px)}}
+@keyframes wag{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(12deg)}}
 .bar{height:12px;background:var(--soft);border-radius:999px;margin-top:6px;overflow:hidden;position:relative}
 .bar i{display:block;height:100%;background:var(--brand);border-radius:999px;transition:width .3s}
 .qlist{display:flex;flex-direction:column;gap:14px;margin-top:8px}
@@ -205,8 +212,7 @@ details.rank summary{cursor:pointer;font-family:var(--display);font-weight:800;p
 .actions .btn{flex:1 1 180px;text-align:center}
 .xbtn{background:#0F1419;color:#fff;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;flex-basis:100%!important;font-family:var(--display)}
 .xbtn svg{width:18px;height:18px}
-:root[data-theme="dark"] .xbtn{background:#fff;color:#0F1419}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .xbtn{background:#fff;color:#0F1419}}
+
 .note{font-size:12px;color:var(--muted);margin-top:18px;line-height:1.6}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;font-family:var(--display);font-size:14px;z-index:20}
 
@@ -259,7 +265,25 @@ details.rank summary{cursor:pointer;font-family:var(--display);font-weight:800;p
   <main id="vQuiz" hidden>
     <div class="qhead">
       <div class="prog-row"><span id="stepLbl">Q1</span><span><b id="cnt">0</b> / 60 回答</span></div>
-      <div class="bar"><i id="barI" style="width:0%"></i></div>
+      <div class="trail" aria-hidden="true">
+        <div class="track"><i id="barI" style="width:0%"></i></div>
+        <svg class="goal" viewBox="0 0 40 24"><path d="M8 6a5 5 0 1 1 6 4h12a5 5 0 1 1 6-4 5 5 0 1 1-6 8H14a5 5 0 1 1-6-8Z" fill="#FFF8E8" stroke="#E3B23F" stroke-width="2"/></svg>
+        <div class="walker" id="walker"><svg viewBox="0 0 64 48">
+          <path class="tail" d="M15 22 Q4 16 8 6 Q13 13 18 19 Z" fill="#D9853B"/>
+          <rect class="leg l2" x="21" y="28" width="5" height="13" rx="2.5" fill="#C06F28"/>
+          <rect class="leg l4" x="41" y="28" width="5" height="13" rx="2.5" fill="#C06F28"/>
+          <ellipse cx="31" cy="26" rx="17" ry="10" fill="#E0913F"/>
+          <ellipse cx="33" cy="31" rx="11" ry="4.5" fill="#FFF5E6"/>
+          <rect class="leg l1" x="16" y="29" width="5.5" height="13" rx="2.7" fill="#E0913F"/>
+          <rect class="leg l3" x="36" y="29" width="5.5" height="13" rx="2.7" fill="#E0913F"/>
+          <path d="M42 8 L44 -1 L51 6 Z" fill="#C06F28"/>
+          <circle cx="48" cy="16" r="10" fill="#E0913F"/>
+          <ellipse cx="56" cy="20" rx="6.5" ry="4.6" fill="#FFF5E6"/>
+          <circle cx="61.5" cy="18.2" r="2.1" fill="#2B211C"/>
+          <circle cx="50" cy="14" r="1.8" fill="#2B211C"/>
+          <rect x="38" y="21" width="7" height="3.2" rx="1.6" fill="#FF8A7A" transform="rotate(-20 41 22)"/>
+        </svg></div>
+      </div>
     </div>
     <div id="stage"></div>
     <div class="qctl">
@@ -374,7 +398,7 @@ function dogSVG(p){
 
 /* ===== 状態 ===== */
 /* シェアするURL。自分のサイトに置いたらここを書き換える */
-const SHARE_URL='https://kkkishigami.github.io/wan-shindan/';
+const SHARE_URL='https://wanko-lab.github.io/wan-shindan/';
 const KEY='wanshindan-v2';
 let ans=new Array(60).fill(0),page=0;
 function save(){try{localStorage.setItem(KEY,JSON.stringify({ans,page}))}catch(e){}}
@@ -394,10 +418,14 @@ $('resumeBtn').onclick=()=>{renderQuiz();show('vQuiz')};
 
 /* ===== 質問画面（1問ずつ表示・回答で自動的に次へ） ===== */
 const LBL=['そう思わない','あまり思わない','どちらでもない','ややそう思う','そう思う'];
-let lock=false;
-function renderQuiz(){
-  const n=ans.filter(Boolean).length;
+let lock=false,walkT;
+function setProg(n,walk){
   $('cnt').textContent=n;$('barI').style.width=(n/60*100)+'%';
+  const w=$('walker');w.style.left=`calc((100% - 70px) * ${n/60})`;
+  if(walk){w.classList.add('walking');clearTimeout(walkT);walkT=setTimeout(()=>w.classList.remove('walking'),550)}
+}
+function renderQuiz(){
+  setProg(ans.filter(Boolean).length,false);
   $('prevBtn').disabled=page===0;
   if(page>=60){
     $('stepLbl').textContent='回答の確認';
@@ -415,7 +443,7 @@ $('stage').addEventListener('click',e=>{
   const b=e.target.closest('button[data-v]');if(!b||lock)return;
   ans[page]=+b.dataset.v;
   $('stage').querySelectorAll('button[data-v]').forEach(x=>{const on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-checked',on)});
-  const n=ans.filter(Boolean).length;$('cnt').textContent=n;$('barI').style.width=(n/60*100)+'%';
+  setProg(ans.filter(Boolean).length,true);
   lock=true;
   setTimeout(()=>{page=ans.findIndex((v,i)=>i>page&&!v);if(page<0)page=60;save();renderQuiz();lock=false},260);
 });
